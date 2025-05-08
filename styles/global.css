@@ -8,3 +8,120 @@
 /* the font-family 'JetBrains Mono', has been linked
  * and is available for your use
  * */
+ body {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+ .container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #4B0082;
+}
+
+header p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin-top: 20px;
+  border-bottom: 2px solid #4B0082;
+  padding-bottom: 5px;
+  color: #4B0082;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.job, .school {
+  margin-top: 15px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+a {
+  color: #4B0082;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+    /* Basic form styling */
+      .contact-form {
+        max-width: 500px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background-color: #f8f9fa;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        font-family: 'JetBrains Mono', monospace;
+      }
+      
+      .form-group {
+        margin-bottom: 1rem;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+      
+      input, textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 14px;
+      }
+      
+      textarea {
+        min-height: 150px;
+        resize: vertical;
+      }
+      
+      button {
+        background-color: #4a6cf7;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 600;
+        transition: background-color 0.3s;
+      }
+      
+      button:hover {
+        background-color: #3652d9;
+      }
+      
+      .required {
+        color: #e74c3c;
+      }
