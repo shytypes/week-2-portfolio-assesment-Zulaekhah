@@ -83,6 +83,21 @@
           
           <button type="submit">Send Message</button>
         </form>
+        <!-- Feedback Display Section -->
+         <div id="feedbackDisplay" class="feedback hidden">
+          <h3>Live Feedback</h3>
+          <p><strong>Name:</strong> <span id="nameDisplay"></span></p>
+          <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+          <p><strong>Subject:</strong> <span id="subjectDisplay"></span></p>
+          <p><strong>Message:</strong> <span id="messageDisplay"></span></p>
+        </div>
+        
+        <!-- Error Messages -->
+        <div class="form-errors">
+          <p id="nameError" class="error hidden">Name is required.</p>
+          <p id="emailError" class="error hidden">Please enter a valid email address.</p>
+          <p id="messageError" class="error hidden">Message cannot be empty.</p>
+        </div>
       </section>
       <footer>
         <p>&copy; 2025 Suliat Sulaiman. All rights reserved.</p>
