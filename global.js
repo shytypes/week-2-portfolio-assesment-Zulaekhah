@@ -1,14 +1,11 @@
-const contactForm = document.getElementById('contactForm');
+const contactForm = document.getElementById('contactForm'); 
 const nameInput = document.getElementById('name');
 const emailInput = document.getElementById('email');
 const subjectInput = document.getElementById('subject');
 const messageInput = document.getElementById('message');
 
-// Create a container to show submitted feedback
-const feedbackContainer = document.createElement('div');
-feedbackContainer.id = 'feedbackDisplay';
-feedbackContainer.classList.add('feedback-container');
-contactForm.parentNode.appendChild(feedbackContainer); // Add it after the form
+// Use the existing feedback container from the HTML
+const feedbackContainer = document.getElementById('feedbackDisplay');
 
 contactForm.addEventListener('submit', function (e) {
   e.preventDefault(); // Prevent actual form submission
@@ -38,7 +35,7 @@ contactForm.addEventListener('submit', function (e) {
   `;
 
   feedbackContainer.innerHTML = resultHTML;
-  feedbackContainer.classList.add('active'); // Optional: add a class to style it
+  feedbackContainer.classList.add('active'); // Optional: for CSS styling
 
   // Optional: Reset form
   contactForm.reset();
