@@ -1,27 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <!-- DO NOT CHANGE CODE WITHIN THE HEAD ELEMENT -->
-  <!-- UNLESS YOU KNOW WHAT YOU"RE DOING-->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suliat Sulaiman - Front-End Developer </title>
     <!-- add fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
-      rel="stylesheet"
-    />
-    <!-- local style -->
-    <link rel="stylesheet" href="styles/global.css" />
-  </head>
-  <body>
-    <!-- Header Area -->
-    <header></header>
+      rel="stylesheet"/>
+  <link rel="stylesheet" href="styles/global.css" />
+</head>
+<body>
+  <header>
+      <h1>Suliat Sulaiman</h1>
+      <p>Front-End Web Developer</p>
+      <p>Email: <a href="suliatsulaiman@gmail.com">suliatsulaiman@gmail.com</a> | Portfolio: https://github.com/Zulaekhah </p>
+    </header>
     <!-- Main Area -->
     <main>
-      <h1>My Amazing Portfolio</h1>
-    </main>
-  </body>
+      <section class="summary">
+        <h2>Profile Summary</h2>
+        <p>Creative and detail-oriented Front-End Developer with 3+ years of experience building responsive web applications using HTML, CSS, JavaScript, and React. Passionate about clean code, user-centered design, and creating seamless user experiences.</p>
+      </section>
+  
+      <section class="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>HTML5, CSS3, SCSS</li>
+          <li>JavaScript (ES6+), React.js</li>
+          <li>Responsive Design, Flexbox, CSS Grid</li>
+          <li>Version Control: Git & GitHub</li>
+          <li>Tools: VS Code, Figma, Chrome DevTools</li>
+        </ul>
+      </section>
+  
+      <section class="education">
+        <h2>Education</h2>
+        <div class="school">
+          <h3>Responsive Web Design – freeCodeCamp.org</h3>
+          <p><em>2024</em></p>
+        </div>
+      </section>
+  
+      <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:jane.doe@example.com">Suliat Sulaiman</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/suliat-sulaiman">Suliat Sulaiman</a></p>
+        <p>GitHub: <a href="https://github.com/Zulaekhah">github.com/Zulaekhah</a></p>
+        <p>Location: Remote </p>
+      </section>
+  <div class="container">
+    <form id="contactForm">
+      <h1>Contact Us</h1>
+      <label for="name">Name <span>*</span></label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email <span>*</span></label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="message">Message <span>*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Feedback display area -->
+    <div id="feedbackDisplay" class="feedback-container"></div>
+  </div>
+
+  <!-- Link to external JavaScript -->
+  <script src="global.js"></script>
+</body>
 </html>
